@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { getLocaleId } from '@angular/common';
+import { Component, getNgModuleById } from '@angular/core';
+import { find, findIndex } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -8,15 +10,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   CodigoRMA : number = 10001;
-  Nome : string = "Tanjiro";
-  nota1 : number = 10;
+  Nome : string = "Manoel Gomes";
+  nota1 : number = 9;
   nota2 : number = 10;
-  nota3 : number = 9;
+  nota3 : number = 7;
   nota4 : number = 9;
   media : number = (this.nota1 + this.nota2 + this.nota3 + this.nota4)/4
-  imagem : string = "../assets/img/Tanjiro.jpg"
-
-
+  imagem : string = "../assets/img/ManoelGomes.jpg"
 
   title = 'CalcularMedia';
 }
